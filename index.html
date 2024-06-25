@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup/login</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+            font-family:'Jost',sans-serif;
+            background:linear-gradient(to bottom,#0f0c29, #302b63 , #24243e);
+        }
+        label{
+            color: white;
+            font-size: 2.3em;
+            justify-content: center;
+            display: flex;
+            margin: 60px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: .5s ease-in-out;
+        }
+        input{
+            width: 60%;
+            height: 15px;
+            background: white;
+            justify-content: center;
+            display: flex;
+            margin: 20px auto;
+            padding: 10px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+        <div class="signup">
+            <form action="./home.html">
+                <label for="chk" aria-hidden="true">Sign Up</label>
+                <input type="text" name="txt" placeholder="Username" required> 
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="pswd" placeholder="Password" required>
+                <input type="password" name="pswd" placeholder="Confirm Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        <div class="login">
+                <form action="./home.html">
+                <label for="chk" aria-hidden="true">Login</label>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="pswd" placeholder="Password" required>
+                <a style="color:black; text-align:center;" href="#" for="chk" aria-hidden="true">Forget Password?</a>
+                <button type="submit">Login</button>
+
+                </form>
+        </div>
+    </div>
+</body>
+</html>
